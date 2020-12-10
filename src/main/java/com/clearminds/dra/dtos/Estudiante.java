@@ -8,7 +8,7 @@ public class Estudiante {
 	private String apellido;
 	private int id;
 	private int edad;
-	private Date fechaModificacion;
+	private String fechaModificacion;
 
 	public Estudiante(String nombre, String apellido, int id) {
 		this.nombre = nombre;
@@ -57,11 +57,11 @@ public class Estudiante {
 		this.edad = edad;
 	}
 
-	public Date getFechaModificacion() {
+	public String getFechaModificacion() {
 		return fechaModificacion;
 	}
 
-	public void setFechaModificacion(Date fechaModificacion) {
+	public void setFechaModificacion(String fechaModificacion) {
 		this.fechaModificacion = fechaModificacion;
 	}
 
