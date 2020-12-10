@@ -1,11 +1,15 @@
 package com.clearminds.dra.dtos;
 
+import java.util.Date;
+
 public class Estudiante {
-	
+
 	private String nombre;
 	private String apellido;
 	private int id;
-	
+	private int edad;
+	private Date fechaModificacion;
+
 	public Estudiante(String nombre, String apellido, int id) {
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -15,6 +19,10 @@ public class Estudiante {
 	public Estudiante(String nombre, String apellido) {
 		this.nombre = nombre;
 		this.apellido = apellido;
+	}
+
+	public Estudiante() {
+
 	}
 
 	public String getNombre() {
@@ -41,9 +49,28 @@ public class Estudiante {
 		this.id = id;
 	}
 
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public Date getFechaModificacion() {
+		return fechaModificacion;
+	}
+
+	public void setFechaModificacion(Date fechaModificacion) {
+		this.fechaModificacion = fechaModificacion;
+	}
+
 	@Override
 	public String toString() {
-		return "Estudiante [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + "]";
+		return "Estudiante [nombre=" + nombre + ", apellido=" + apellido + ", id=" + id + ", edad=" + edad
+				+ ", fechaModificacion=" + fechaModificacion + "]";
 	}
+
+	
 
 }
